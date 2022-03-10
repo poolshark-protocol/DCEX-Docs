@@ -3,22 +3,22 @@
 <!-- Application footer -->
 <footer class="md-footer">
   <!-- Further information -->
-  <div class="md-footer-meta md-typeset" style="background-color: #232844; margin-top: -50px;">
-    <div class="md-footer-meta__inner md-grid">
+  <div class="md-footer-meta md-typeset" style="background-color: var(--md-primary-bg-color);">
+    <div class="md-footer-meta__inner md-grid" style="background-color: var(--md-primary-bg-color);">
 
       <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         {% if config.copyright %}
-          <div class="md-footer-copyright__highlight" style="color: rgb(255, 255, 255);">
+          <div class="md-footer-copyright__highlight" style="color: var(--md-primary-text);">
             {{ config.copyright }}
           </div>
         {% endif %}
-        <div style="color: rgb(192, 192, 192);">
+        <div style="color: var(--md-primary-text);">
           Made with
           <a
                   href="https://squidfunk.github.io/mkdocs-material/"
                   target="_blank" rel="noopener"
-                  style="color: rgb(192, 192, 192);"
+                  style="color: var(--md-primary-title-text);"
           >
             Material for MkDocs
           </a>

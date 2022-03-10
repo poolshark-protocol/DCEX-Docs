@@ -39,19 +39,55 @@ span.type {
   --md-primary-header-text: black;
 }
 [data-md-color-scheme="psdark"] {
-  --md-primary-fg-color: #0C0F1F;
+  --md-primary-fg-color: #232844;
   --md-primary-header-color: #232844;
+  --md-primary-bg-color: #0C0F1F;
   --md-primary-header-text: white;
   --md-primary-title-text: #BAC2EB;
   --md-primary-text: white;
-  --md-primary-button: white;
-  --md-primary-button-hover: --md-primary-fg-color;
+  --md-primary-button: var(--md-primary-fg-color);
+  --md-primary-button-hover: var(--md-primary-fg-color);
   --md-primary-button-border: white;
-  --md-primary-button-text: --md-primary-fg-color;
-  --md-primary-button-hover-text: white;
   /* --md-primary-option-box: #4E5E90; */
   --md-primary-option-box: #2E385D;
   --md-primary-icon: white;
+
+
+  --md-default-fg-color: var(--md-primary-text);
+  --md-default-fg-color--light: var(--md-primary-header-color);
+  /* --md-default-fg-color--lighter:
+  --md-default-fg-color--lightest: */
+  --md-default-bg-color: var(--md-primary-bg-color);
+/*
+  --md-default-bg-color--light:
+  --md-default-bg-color--lighter:
+  --md-default-bg-color--lightest:
+  --md-code-fg-color:
+  --md-code-bg-color:
+  --md-code-hl-color:
+  --md-code-hl-number-color:
+  --md-code-hl-special-color:
+  --md-code-hl-function-color:
+  --md-code-hl-constant-color:
+  --md-code-hl-keyword-color:
+  --md-code-hl-string-color:
+  --md-code-hl-name-color:
+  --md-code-hl-operator-color:
+  --md-code-hl-punctuation-color:
+  --md-code-hl-comment-color:
+  --md-code-hl-generic-color:
+  --md-code-hl-variable-color:
+  --md-typeset-color:
+  --md-typeset-a-color:
+  --md-typeset-mark-color:
+  --md-typeset-kbd-color:
+  --md-typeset-kbd-accent-color:
+  --md-typeset-kbd-border-color:
+  --md-typeset-table-color:
+  --md-admonition-bg-color:
+  --md-footer-bg-color:
+  --md-footer-bg-color--dark:
+*/
 }
 
 .md-typeset .admonition.code-preview,
