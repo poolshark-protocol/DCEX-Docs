@@ -57,9 +57,17 @@ theme:
   name: material
   custom_dir: site/overrides
   palette:
-    primary: white
+    - scheme: pslight
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: psdark
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
   font: false
-  logo: assets/images/Logo.svg
+  logo: assets/images/Logo-light.svg
   favicon: assets/images/Logo.svg
   icon:
     repo: fontawesome/brands/github

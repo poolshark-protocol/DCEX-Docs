@@ -37,14 +37,14 @@
 
 /* Get started button */
 .md-typeset .md-button--primary {
-    color: var(--md-primary-fg-color);
-    background-color: var(--md-primary-bg-color);
-    border-color: var(--md-primary-bg-color);
+    color: var(--md-primary-button-text);
+    background-color: var(--md-primary-button);
+    border-color: var(--md-primary-button-border);
 }
 .md-typeset .md-button--primary:hover {
-  color: var(--md-primary-bg-color);
-  background-color: var(--md-primary-fg-color);
-  border-color: var(--md-primary-bg-color);
+  color: var(--md-primary-button-hover-text);
+  background-color: var(--md-primary-button-hover);
+  border-color: var(--md-primary-button-border);
 }
 
 .tx-hero {
@@ -58,10 +58,10 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  color: rgb(38, 38, 38);
+  color: var(--md-primary-title-text);
 }
 .tx-hero p {
-  color: rgb(92, 92, 92);
+  color: var(--md-primary-text);
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -81,11 +81,15 @@
   min-width: 0;
 }
 
+.test {
+  background: var(--md-primary-fg-color);
+}
+
 /* Secondary content styles */
 .secondary-section {
-  background: #171B33;
-  border-top: 1px solid rgb(222, 222, 222);
-  border-bottom: 1px solid rgb(222, 222, 222);
+  /* background: #171B33; */
+  /* border-top: 1px solid rgb(222, 222, 222); */
+  /* border-bottom: 1px solid rgb(222, 222, 222); */
 }
 @media screen and (max-width: 1012px) {
   .secondary-section {
@@ -127,7 +131,7 @@
 }
 
 .secondary-section .g .section .component-wrapper h3 {
-  color: rgb(255, 255, 255);
+  color: var(--md-primary-title-text);
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
@@ -136,11 +140,11 @@
 }
 
 .secondary-section .g .section .component-wrapper h4 {
-  color: rgb(255, 255, 255);
+  color: var(--md-primary-title-text);
 }
 
 .secondary-section .g .section .component-wrapper p {
-  color: rgb(240, 240, 240);
+  color: var(--md-primary-text);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -213,7 +217,7 @@
   transition: none;
   background: none;
   padding: 0;
-  background-color: #BAC2EB;
+  background-color: var(--md-primary-option-box);
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card {
@@ -251,6 +255,10 @@
   min-width: 1.2rem;
 }
 
+.ico {
+  fill: var(--md-primary-icon);
+}
+
 .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content {
   display: flex;
   flex: 1 1 0%;
@@ -259,28 +267,28 @@
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content h5 {
-  color: rgb(61, 61, 61);
+  color: var(--md-primary-title-text);
   margin: 0;
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content p {
   margin-top: 0.25em;
   margin-bottom: 0;
-  color: rgb(92, 92, 92);
+  color: var(--md-primary-title-text);
   font-size: 0.65rem;
   font-weight: 300;
   line-height: normal;
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content code {
-  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  background: rgba(255, 0, 0, 0.05) none repeat scroll 0% 0%;
   padding: 2px 6px;
   border-radius: 4px;
 }
 
 
 .component-wrapper span.em {
-  color: rgb(255, 255, 255);
+  color: var(--md-primary-text);
   font-weight: bold;
 }
 
@@ -303,125 +311,131 @@
 
 </style>
 
-  <!-- Hero for landing page -->
-  <div class="md-container tx-hero">
-    <div class="md-grid md-typeset">
-      <div class="md-main__inner">
-        <div>
-          <h1>Your platform for mainstream<br/>transactions on Ethereum</h1>
-          <p>PoolSharks DCEX is an open source web3 protocol that makes it easy for users, protocols, and DAOs to reduce gas fees on Uniswap, Aave, and more.
-          </p>
-          <a
-            href="docs/overview/"
-            title="Get Started"
-            class="md-button md-button--primary"
-          >
-            Get started 
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-left:2px"><path d="M1 5.16772H9.5M9.5 5.16772L6.5 1.66772M9.5 5.16772L6.5 8.66772" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          </a>
+  <div class="md-container test">
+
+    <!-- Hero for landing page -->
+    <div class="md-container tx-hero">
+      <div class="md-grid md-typeset">
+        <div class="md-main__inner">
+          <div>
+            <h1>
+              Your platform for mainstream<br/>transactions on Ethereum
+            </h1>
+            <p>
+              PoolSharks DCEX is an open source web3 protocol that makes it easy for users, protocols, and DAOs to reduce gas fees on Uniswap, Aave, and more.
+            </p>
+            <a
+              href="docs/overview/"
+              title="Get Started"
+              class="md-button md-button--primary"
+            >
+              Get started
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-left:2px"><path d="M1 5.16772H9.5M9.5 5.16772L6.5 1.66772M9.5 5.16772L6.5 8.66772" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="md-container">
-    <div class="tx-hero__image">
-      <img
-        src="{{config.site_url}}assets/images/screen.png"
-        alt=""
-        draggable="false"
-      >
+    <div class="md-container">
+      <div class="tx-hero__image">
+        <img
+          src="{{config.site_url}}assets/images/screen.png"
+          alt=""
+          draggable="false"
+        >
+      </div>
     </div>
-  </div>
 
-  <div class="md-container secondary-section">
-    <div class="g">
-      <!-- Architecture as building blocks -->
-      <div class="section">
-        <div class="component-wrapper">
-          <div class="first-column">
-            <h3>Get started with a single transaction</h3>
-            <p>
-              Run a <span class="em">single transcation</span> to quickly get started pooling gas with other
-              users on Ethereum using the latest non-custodial trustless infrastructure.
-            </p>
-            <p>
-              Instead of storing data on-chain and forcing users to pay heavy gas costs,
-              PoolSharks provides decentralized services to process user requests to spend 
-              token together from a single contract. The necessary pieces are already there 
-              to swap your favorite tokens and interact with your favorite DeFi protocols. 
-              Focus your time on coordinating with other users instead of  worrying about 
-              gas costs.
-            </p>
+    <div class="md-container secondary-section">
+      <div class="g">
+        <!-- Architecture as building blocks -->
+        <div class="section">
+          <div class="component-wrapper">
+            <div class="first-column">
+              <h3>Get started with a single transaction</h3>
+              <p>
+                Run a <span class="em">single transcation</span> to quickly get started pooling gas with other
+                users on Ethereum using the latest non-custodial trustless infrastructure.
+              </p>
+              <p>
+                Instead of storing data on-chain and forcing users to pay heavy gas costs,
+                PoolSharks provides decentralized services to process user requests to spend
+                token together from a single contract. The necessary pieces are already there
+                to swap your favorite tokens and interact with your favorite DeFi protocols.
+                Focus your time on coordinating with other users instead of  worrying about
+                gas costs.
+              </p>
+            </div>
+            <div class="second-column">
+              <div class="image-wrapper">
+                <img
+                  src="{{config.site_url}}assets/images/copilot-init.png"
+                  alt=""
+                  draggable="false"
+                >
+              </div>
+            </div>
           </div>
-          <div class="second-column">
-            <div class="image-wrapper">
-              <img
-                src="{{config.site_url}}assets/images/copilot-init.png"
-                alt=""
-                draggable="false"
-              >
+          <div class="component-wrapper" style="display: block;">
+            <h4>Explore features</h4>
+
+            <!-- Arch as code -->
+            <div class="responsive-grid">
+              <a class="card-wrapper" href="intro">
+                <div class="card">
+                  <div class="logo">
+                    <span class="twemoji ico">
+                      {% include ".icons/octicons/pencil-24.svg" %}
+                    </span>
+                  </div>
+                  <div class="card-content">
+                    <h5>User Guide</h5>
+                    <p>
+                      Get started on saving gas costs with DCEX and exploring the expansive ecosystem.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Networking -->
+              <a class="card-wrapper" href="intro/layers">
+                <div class="card">
+                  <div class="logo">
+                    <span class="twemoji ico">
+                      {% include ".icons/layer.svg" %}
+                    </span>
+                  </div>
+                  <div class="card-content">
+                    <h5>Layers</h5>
+                    <p>
+                      Explore how DCEX provides an execution loop for processing on-chain requests.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Customize -->
+              <a class="card-wrapper" href="docs">
+                <div class="card">
+                  <div class="logo">
+                    <span class="twemoji ico">
+                      {% include ".icons/aws/fargate-32.svg" %}
+                    </span>
+                  </div>
+                  <div class="card-content">
+                    <h5>Modules</h5>
+                    <p>
+                      Utilize existing integrations or build your own extension on top of existing DCEX services.
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="component-wrapper" style="display: block;">
-          <h4>Explore features</h4>
-
-          <!-- Arch as code -->
-          <div class="responsive-grid">
-            <a class="card-wrapper" href="intro">
-              <div class="card">
-                <div class="logo">
-                  <span class="twemoji">
-                    {% include ".icons/octicons/pencil-24.svg" %}
-                  </span>
-                </div>
-                <div class="card-content">
-                  <h5>User Guide</h5>
-                  <p>
-                    Get started on saving gas costs with DCEX and exploring the expansive ecosystem.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Networking -->
-            <a class="card-wrapper" href="intro/layers">
-              <div class="card">
-                <div class="logo">
-                  <span class="twemoji">
-                    {% include ".icons/layer.svg" %}
-                  </span>
-                </div>
-                <div class="card-content">
-                  <h5>Layers</h5>
-                  <p>
-                    Explore how DCEX provides an execution loop for processing on-chain requests.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Customize -->
-            <a class="card-wrapper" href="docs">
-              <div class="card">
-                <div class="logo">
-                  <span class="twemoji">
-                    {% include ".icons/aws/fargate-32.svg" %}
-                  </span>
-                </div>
-                <div class="card-content">
-                  <h5>Modules</h5>
-                  <p>
-                    Utilize existing integrations or build your own extension on top of existing DCEX services.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
+  </div>
   </div>
 {% endblock %}
 
